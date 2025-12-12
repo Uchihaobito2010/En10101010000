@@ -72,7 +72,7 @@ status_messages = [
     "\x1b[1;93m🧙‍♂️ CASTING PYTHONIC ENCRYPTION SPELLS... 🪄",
     "\x1b[1;94m📦 PACKAGING CODE IN STEALTH MODE... 🕵️",
     "\x1b[1;95m🔍 SCRAMBLING CODE BEYOND RECOGNITION... 🌀",
-    "\x1b[1;96m🚀 LAUNCHING CYTHON HYPERDRIVE... 🌟"
+    "\x1b[1;96m🚀 LAUNCHING HYPERDRIVE... 🌟"
 ]
 
 def display_status():
@@ -363,7 +363,7 @@ def encrypt_file(file_path):
     if not os.path.exists("m/"):
         os.mkdir("m")
 
-    print("\x1b[1;92m\x1b[38;5;46m🎉 ENC PROCESS: STARTING THE CYTHON/BASE64 JOURNEY... 🌟")
+    print("\x1b[1;92m\x1b[38;5;46m🎉 ENC PROCESS: STARTING THE JOURNEY... 🌟")
     
     name = file_path.split("/")[-1]
     name_temp = gw(8) + ".py"
@@ -428,10 +428,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 Hello {user.first_name}! 👋
 
-I can encrypt your Python files using a two-layer obfuscation:
-1. **Outer Layer (Visible):** /Reverse Loader.
-2. **Inner Layer (Hidden):** Cython compilation (Python -> C -> Executable)
-
 *Available Commands:*
 /start - Show this welcome message
 /help - Get help on how to use the bot
@@ -445,10 +441,6 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 *Method 1 - Direct File Upload:*
 Simply send me any Python (.py) file and I'll automatically process it.
-
-*Obfuscation Layers:*
-🔹 **Layer 1 (Outer):**  Encoding reversed and wrapped in a loader (Obito style). *This part is visible.*
-🔹 **Layer 2 (Inner):** Python code is compiled to C using Cython, then packaged with a GCC compilation logic to run as a native executable. *This part is hidden in the payload.*
 
 ⚠️ *Important:*
 - The user running the final file needs `gcc` installed to compile the C code.
@@ -578,3 +570,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
